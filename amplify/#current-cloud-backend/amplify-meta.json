@@ -1,0 +1,51 @@
+{
+	"providers": {
+		"awscloudformation": {
+			"AuthRoleName": "amplifytestapp-20181217224943-authRole",
+			"UnauthRoleArn": "arn:aws:iam::111471140077:role/amplifytestapp-20181217224943-unauthRole",
+			"AuthRoleArn": "arn:aws:iam::111471140077:role/amplifytestapp-20181217224943-authRole",
+			"Region": "us-west-2",
+			"DeploymentBucketName": "amplifytestapp-20181217224943-deployment",
+			"UnauthRoleName": "amplifytestapp-20181217224943-unauthRole",
+			"StackName": "amplifytestapp-20181217224943",
+			"StackId": "arn:aws:cloudformation:us-west-2:111471140077:stack/amplifytestapp-20181217224943/19bb0070-0291-11e9-803b-02493f0d1b56"
+		}
+	},
+	"auth": {
+		"cognito82d82a83": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation",
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/amplifytestapp-20181217224943-deployment/amplify-cfn-templates/auth/cognito82d82a83-cloudformation-template.yml",
+				"logicalId": "authcognito82d82a83"
+			},
+			"lastPushTimeStamp": "2018-12-18T07:12:49.423Z",
+			"output": {
+				"AppClientSecret": "vgr3o3d8581e6adi6kn67mkulmfulfebdqjq3nqujds3kqu0u5r",
+				"UserPoolId": "us-west-2_DcllRQJhf",
+				"AppClientIDWeb": "34npfotbr8nge3rn68qhhtur7l",
+				"AppClientID": "3pofpn4rkpob2qg8j443ngrk4u",
+				"IdentityPoolId": "us-west-2:4d4f6551-f5d6-4207-bd6c-df0d948e29ca",
+				"IdentityPoolName": "cognito82d82a83_identitypool_82d82a83",
+				"UserPoolName": "cognito82d82a83_userpool_82d82a83"
+			},
+			"lastPushDirHash": "APCLSejY26JI8zXYuNGExtE8kCg="
+		}
+	},
+	"storage": {
+		"amplifytestappstorage": {
+			"service": "S3",
+			"providerPlugin": "awscloudformation",
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/amplifytestapp-20181217224943-deployment/amplify-cfn-templates/storage/s3-cloudformation-template.json",
+				"logicalId": "storageamplifytestappstorage"
+			},
+			"lastPushTimeStamp": "2018-12-18T07:12:49.423Z",
+			"output": {
+				"BucketName": "amplifytestappstorage",
+				"Region": "us-west-2"
+			},
+			"lastPushDirHash": "m78JKDynosjyAvdYZJdglzIV8J0="
+		}
+	}
+}
